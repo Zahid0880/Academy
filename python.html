@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Courses - Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="category-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-icon">🟣</span>
+                    <h1>ACADEMY</h1>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="teach.html">Teach</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search Courses">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="profile">
+                <div class="profile-img">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Profile">
+                </div>
+                <div class="profile-info">
+                    <p class="profile-name">Refael Pathan</p>
+                    <p class="profile-title">UI/UX Designer</p>
+                </div>
+                <div class="notification">
+                    <span class="notification-dot"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Category Navigation -->
+    <div class="category-nav container">
+        <div class="category-item active" data-category="python">
+            <span class="category-icon">🎯</span>
+            <span>Python</span>
+        </div>
+        <div class="category-item" data-category="react">
+            <span>React</span>
+        </div>
+        <div class="category-item" data-category="unity">
+            <span>Unity</span>
+        </div>
+        <div class="category-item" data-category="uiux">
+            <span class="category-icon special">UI & UX</span>
+        </div>
+        <div class="category-item" data-category="docker">
+            <span>Docker</span>
+        </div>
+        <div class="category-item" data-category="aftereffects">
+            <span>After Effects</span>
+        </div>
+        <div class="category-item" data-category="lightroom">
+            <span>Lightroom</span>
+        </div>
+        <div class="category-item" data-category="photography">
+            <span>Photography</span>
+        </div>
+        <div class="category-item">
+            <span class="more-icon"><i class="fas fa-chevron-right"></i></span>
+        </div>
+    </div>
+
+    <!-- Category Banner -->
+    <section class="category-banner">
+        <div class="container">
+            <div class="category-banner-content">
+                <h1><span class="category-icon">🎯</span> Python</h1>
+                <p>Learn Python programming from beginner to advanced. Master data science, web development, automation, and more with Python's versatile capabilities.</p>
+            </div>
+            <div class="category-stats">
+                <div class="stat">
+                    <span class="stat-number">245</span>
+                    <span class="stat-label">Courses</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">1.2M+</span>
+                    <span class="stat-label">Students</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">120</span>
+                    <span class="stat-label">Instructors</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Courses -->
+    <section class="featured-courses">
+        <div class="container">
+            <h2 class="section-title">Featured Python Courses</h2>
+            <div class="courses-grid">
+                <!-- Course Card 1 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="./img/03.jpg" alt="Python for Beginners - Learn Programming">
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Python for Beginners - Learn Programming</h3>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>42 Students</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Duration: 24h</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-signal"></i>
+                                <span>Beginner</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <button class="btn btn-sm btn-primary">Enroll Course</button>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 2 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="./img/05.jpg" alt="Data Science with Python: Pandas, NumPy, Matplotlib">
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Data Science with Python: Pandas, NumPy, Matplotlib</h3>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>38 Students</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Duration: 30h</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-signal"></i>
+                                <span>Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <button class="btn btn-sm btn-primary">Enroll Course</button>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 3 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="./img/07.jpg" alt="Web Development with Django">
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Web Development with Django</h3>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>35 Students</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Duration: 28h</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-signal"></i>
+                                <span>Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <button class="btn btn-sm btn-primary">Enroll Course</button>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Paths -->
+    <section class="learning-paths">
+        <div class="container">
+            <h2 class="section-title">Python Learning Paths</h2>
+            <div class="paths-grid">
+                <!-- Path Card 1 -->
+                <div class="path-card">
+                    <div class="path-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="path-content">
+                        <h3>Python Developer</h3>
+                        <p>Master Python programming fundamentals and advanced concepts to become a professional Python developer.</p>
+                        <div class="path-details">
+                            <span><i class="fas fa-book"></i> 5 Courses</span>
+                            <span><i class="fas fa-clock"></i> 80+ Hours</span>
+                        </div>
+                        <button class="btn btn-outline">View Path</button>
+                    </div>
+                </div>
+
+                <!-- Path Card 2 -->
+                <div class="path-card">
+                    <div class="path-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="path-content">
+                        <h3>Data Scientist</h3>
+                        <p>Learn data analysis, visualization, machine learning, and statistical modeling with Python.</p>
+                        <div class="path-details">
+                            <span><i class="fas fa-book"></i> 7 Courses</span>
+                            <span><i class="fas fa-clock"></i> 120+ Hours</span>
+                        </div>
+                        <button class="btn btn-outline">View Path</button>
+                    </div>
+                </div>
+
+                <!-- Path Card 3 -->
+                <div class="path-card">
+                    <div class="path-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="path-content">
+                        <h3>AI & Machine Learning</h3>
+                        <p>Build intelligent systems and algorithms using Python's powerful machine learning libraries.</p>
+                        <div class="path-details">
+                            <span><i class="fas fa-book"></i> 6 Courses</span>
+                            <span><i class="fas fa-clock"></i> 100+ Hours</span>
+                        </div>
+                        <button class="btn btn-outline">View Path</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Topics -->
+    <section class="popular-topics">
+        <div class="container">
+            <h2 class="section-title">Popular Python Topics</h2>
+            <div class="topics-grid">
+                <a href="#" class="topic-tag">Python Basics</a>
+                <a href="#" class="topic-tag">Data Science</a>
+                <a href="#" class="topic-tag">Machine Learning</a>
+                <a href="#" class="topic-tag">Django</a>
+                <a href="#" class="topic-tag">Flask</a>
+                <a href="#" class="topic-tag">Pandas</a>
+                <a href="#" class="topic-tag">NumPy</a>
+                <a href="#" class="topic-tag">Matplotlib</a>
+                <a href="#" class="topic-tag">TensorFlow</a>
+                <a href="#" class="topic-tag">PyTorch</a>
+                <a href="#" class="topic-tag">Scikit-learn</a>
+                <a href="#" class="topic-tag">Web Scraping</a>
+                <a href="#" class="topic-tag">Automation</a>
+                <a href="#" class="topic-tag">API Development</a>
+                <a href="#" class="topic-tag">Game Development</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Courses -->
+    <section class="all-courses">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">All Python Courses</h2>
+                <div class="course-filters">
+                    <div class="filter-group">
+                        <label>Sort By:</label>
+                        <select id="sort-filter">
+                            <option value="popular">Most Popular</option>
+                            <option value="newest">Newest</option>
+                            <option value="highest">Highest Rated</option>
+                            <option value="lowest">Lowest Price</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Level:</label>
+                        <select id="level-filter">
+                            <option value="all">All Levels</option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="courses-grid">
+                <!-- Course Card 1 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Python for Absolute Beginners">
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Python for Absolute Beginners</h3>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>50 Students</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Duration: 18h</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-signal"></i>
+                                <span>Beginner</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <button class="btn btn-sm btn-primary">Enroll Course</button>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 2 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Advanced Python: Object-Oriented Programming">
+                        <div class="course-level">Advanced</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Advanced Python: Object-Oriented Programming</h3>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>28 Students</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Duration: 22h</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-signal"></i>
+                                <span>Advanced</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <button class="btn btn-sm btn-primary">Enroll Course</button>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 3 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Python for Data Analysis">
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Python for Data Analysis</h3>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>45 Students</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Duration: 26h</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-signal"></i>
+                                <span>Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <button class="btn btn-sm btn-primary">Enroll Course</button>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 4 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Building REST APIs with Python and Flask">
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Building REST APIs with Python and Flask</h3>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>32 Students</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Duration: 20h</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-signal"></i>
+                                <span>Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <button class="btn btn-sm btn-primary">Enroll Course</button>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 5 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Python for Finance: Investment Fundamentals">
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Python for Finance: Investment Fundamentals</h3>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>30 Students</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Duration: 24h</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-signal"></i>
+                                <span>Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <button class="btn btn-sm btn-primary">Enroll Course</button>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 6 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Machine Learning with Python: A Practical Introduction">
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Machine Learning with Python: A Practical Introduction</h3>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>48 Students</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Duration: 32h</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-signal"></i>
+                                <span>Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <button class="btn btn-sm btn-primary">Enroll Course</button>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <button class="pagination-btn prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="pagination-numbers">
+                    <span class="page-number active">1</span>
+                    <span class="page-number">2</span>
+                    <span class="page-number">3</span>
+                    <span class="page-number">4</span>
+                    <span class="page-number">5</span>
+                </div>
+                <button class="pagination-btn next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 class="section-title">Find Out About The Latest Python Courses With The</h2>
+                <h3 class="newsletter-title"><span class="highlight">Academy</span> Newsletter</h3>
+                <button class="btn btn-dark">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aenean accumsan bibendum gravida maecenas augue elementum et, sed. Diam, integer feugiat phasellus odio nisi, amet. Lacus facilisi netus faucibus eleifend sem mauris, consequat. Amet facilisis sit sit faucibus nulla. Semper nam tortor felis aliquam.</p>
+                </div>
+                <div class="footer-logo">
+                    <div class="logo">
+                        <span class="logo-icon">🟣</span>
+                    <h1>ACADEMY</h1>
+                </div>
+            </div>
+            
+            <div class="footer-content">
+                <div class="footer-certificate">
+                    <h3>MEMBERSHIP CERTIFICATE</h3>
+                    <img src="./img/012.jpg" alt="Certificate of Education">
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>CATEGORIES</h3>
+                        <ul>
+                            <li><a href="#">Design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Marketing</a></li>
+                            <li><a href="#">Business</a></li>
+                            <li><a href="#">Lifestyle</a></li>
+                            <li><a href="#">Photography</a></li>
+                            <li><a href="#">Music</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>QUICK ACCESS</h3>
+                        <ul>
+                            <li><a href="#">What We Offer</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Leadership</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Catalog</a></li>
+                            <li><a href="#">Degrees</a></li>
+                            <li><a href="#">For Enterprise</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>MORE COMMENT</h3>
+                        <ul>
+                            <li><a href="#">Affiliate</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Accessibility</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2023 Academy. All rights reserved.</p>
+                <p>Designed by Academy</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="category.js"></script>
+    <script src="nav-enhancement.js"></script>
+</body>
+</html>

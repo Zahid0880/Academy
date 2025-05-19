@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact-us-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <span class="logo-icon">🟣</span>
+                <h1>ACADEMY</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="teach.html">Teach</a></li>
+                    <li><a href="contact-us.html" class="active">Contact Us</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search Courses">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="profile">
+                <div class="profile-img">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Profile">
+                </div>
+                <div class="profile-info">
+                    <p class="profile-name">Refael Pathan</p>
+                    <p class="profile-title">UI/UX Designer</p>
+                </div>
+                <div class="notification">
+                    <span class="notification-dot"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We're here to help! Reach out to our team with any questions or feedback.</p>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-info-grid">
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Our Location</h3>
+                    <p>123 Education Street</p>
+                    <p>Learning City, AC 12345</p>
+                    <p>United States</p>
+                </div>
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Phone Number</h3>
+                    <p>Customer Support: +1 (555) 123-4567</p>
+                    <p>Technical Support: +1 (555) 987-6543</p>
+                    <p>Business Inquiries: +1 (555) 456-7890</p>
+                </div>
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Address</h3>
+                    <p>General Inquiries: info@academy.com</p>
+                    <p>Support: support@academy.com</p>
+                    <p>Partnerships: partners@academy.com</p>
+                </div>
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Working Hours</h3>
+                    <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                    <p>Saturday: 10:00 AM - 4:00 PM</p>
+                    <p>Sunday: Closed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-form-container">
+                <div class="contact-form-header">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+                </div>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Your email address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="support">Technical Support</option>
+                            <option value="billing">Billing Question</option>
+                            <option value="partnership">Partnership Opportunity</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+                    </div>
+                    <div class="form-group form-checkbox">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <label for="privacy">I agree to the <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a>.</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Find Us on the Map</h2>
+            <div class="map-container">
+                <!-- Placeholder for map -->
+                <div class="map-placeholder">
+                    <img src="./img/013.jpg" alt="Map location">
+                    <div class="map-overlay">
+                        <p>Interactive map would be displayed here</p>
+                        <button class="btn btn-outline">Open in Google Maps</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How quickly can I expect a response?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We typically respond to all inquiries within 24-48 business hours. For urgent matters, please call our customer support line.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I get technical support for a course?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For technical issues with courses, please use the "Technical Support" option in the contact form or email support@academy.com with details about the problem you're experiencing.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer phone support?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, our phone support is available Monday through Friday from 9:00 AM to 6:00 PM Eastern Time. For weekend support, please use our email system.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I report a bug or issue with the website?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>To report website issues, please select "Technical Support" in the contact form and provide as much detail as possible, including screenshots if available.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aenean accumsan bibendum gravida maecenas augue elementum et, sed. Diam, integer feugiat phasellus odio nisi, amet. Lacus facilisi netus faucibus eleifend sem mauris, consequat. Amet facilisis sit sit faucibus nulla. Semper nam tortor felis aliquam.</p>
+                </div>
+                <div class="footer-logo">
+                    <div class="logo">
+                        <span class="logo-icon">🟣</span>
+                        <h1>ACADEMY</h1>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-content">
+                <div class="footer-certificate">
+                    <h3>MEMBERSHIP CERTIFICATE</h3>
+                    <img src="./img/012.jpg" alt="Certificate of Education">
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>CATEGORIES</h3>
+                        <ul>
+                            <li><a href="#">Design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Marketing</a></li>
+                            <li><a href="#">Business</a></li>
+                            <li><a href="#">Lifestyle</a></li>
+                            <li><a href="#">Photography</a></li>
+                            <li><a href="#">Music</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>QUICK ACCESS</h3>
+                        <ul>
+                            <li><a href="#">What We Offer</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Leadership</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Catalog</a></li>
+                            <li><a href="#">Degrees</a></li>
+                            <li><a href="#">For Enterprise</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>MORE COMMENT</h3>
+                        <ul>
+                            <li><a href="#">Affiliate</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Accessibility</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2023 Academy. All rights reserved.</p>
+                <p>Designed by Academy</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="contact-us.js"></script>
+    <script src="nav-enhancement.js"></script>
+</body>
+</html>

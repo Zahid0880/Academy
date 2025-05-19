@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="categories-styles.css">
+    <link rel="stylesheet" href="category-nav-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <span class="logo-icon">🟣</span>
+                <h1>ACADEMY</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html" class="active">Categories</a></li>
+                    <li><a href="teach.html">Teach</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search Courses">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="profile">
+                <div class="profile-img">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Profile">
+                </div>
+                <div class="profile-info">
+                    <p class="profile-name">Refael Pathan</p>
+                    <p class="profile-title">UI/UX Designer</p>
+                </div>
+                <div class="notification">
+                    <span class="notification-dot"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Course Categories</h1>
+            <p>Explore our wide range of course categories and find the perfect course for you</p>
+        </div>
+    </section>
+
+    <!-- Featured Categories Section -->
+    <section class="featured-categories">
+        <div class="container">
+            <h2 class="featured-categories-title">Featured <span>Categories</span></h2>
+            <div class="featured-categories-grid">
+                <!-- Python -->
+                <div class="featured-category-item" data-link="index.html">
+                    <div class="featured-category-icon">🎯</div>
+                    <h3>Python</h3>
+                    <p>120 Courses</p>
+                </div>
+                
+                <!-- React -->
+                <div class="featured-category-item" data-link="index.html">
+                    <div class="featured-category-icon"><i class="fab fa-react"></i></div>
+                    <h3>React</h3>
+                    <p>85 Courses</p>
+                </div>
+                
+                <!-- Unity -->
+                <div class="featured-category-item" data-link="index.html">
+                    <div class="featured-category-icon"><i class="fas fa-gamepad"></i></div>
+                    <h3>Unity</h3>
+                    <p>65 Courses</p>
+                </div>
+                
+                <!-- UI & UX -->
+                <div class="featured-category-item" data-link="index.html">
+                    <div class="featured-category-icon"><i class="fas fa-palette"></i></div>
+                    <h3>UI & UX</h3>
+                    <p>95 Courses</p>
+                </div>
+                
+                <!-- Docker -->
+                <div class="featured-category-item" data-link="index.html">
+                    <div class="featured-category-icon"><i class="fab fa-docker"></i></div>
+                    <h3>Docker</h3>
+                    <p>50 Courses</p>
+                </div>
+                
+                <!-- After Effects -->
+                <div class="featured-category-item" data-link="index.html">
+                    <div class="featured-category-icon"><i class="fas fa-film"></i></div>
+                    <h3>After Effects</h3>
+                    <p>70 Courses</p>
+                </div>
+                
+                <!-- Lightroom -->
+                <div class="featured-category-item" data-link="index.html">
+                    <div class="featured-category-icon"><i class="fas fa-adjust"></i></div>
+                    <h3>Lightroom</h3>
+                    <p>45 Courses</p>
+                </div>
+                
+                <!-- Photography -->
+                <div class="featured-category-item" data-link="index.html">
+                    <div class="featured-category-icon"><i class="fas fa-camera"></i></div>
+                    <h3>Photography</h3>
+                    <p>80 Courses</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Navigation -->
+    <div class="category-nav container">
+        <div class="category-item active" data-category="python">
+            <a href="index.html">
+                <span class="category-icon">🎯</span>
+                <span>Python</span>
+            </a>
+        </div>
+        <div class="category-item" data-category="react">
+            <a href="index.html">
+                <span>React</span>
+            </a>
+        </div>
+        <div class="category-item" data-category="unity">
+            <a href="index.html">
+                <span>Unity</span>
+            </a>
+        </div>
+        <div class="category-item" data-category="uiux">
+            <a href="index.html">
+                <span>UI & UX</span>
+            </a>
+        </div>
+        <div class="category-item" data-category="docker">
+            <a href="index.html">
+                <span>Docker</span>
+            </a>
+        </div>
+        <div class="category-item" data-category="aftereffects">
+            <a href="index.html">
+                <span>After Effects</span>
+            </a>
+        </div>
+        <div class="category-item" data-category="lightroom">
+            <a href="index.html">
+                <span>Lightroom</span>
+            </a>
+        </div>
+        <div class="category-item" data-category="photography">
+            <a href="index.html">
+                <span>Photography</span>
+            </a>
+        </div>
+        <div class="category-item">
+            <span class="more-icon"><i class="fas fa-chevron-right"></i></span>
+        </div>
+    </div>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Categories</button>
+                <button class="filter-btn" data-filter="development">Development</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="business">Business</button>
+                <button class="filter-btn" data-filter="lifestyle">Lifestyle</button>
+            </div>
+            
+            <div class="categories-grid">
+                <!-- Category Card 1 -->
+                <div class="category-card" data-category="development">
+                    <div class="category-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Learn to build websites and web applications with HTML, CSS, JavaScript and more.</p>
+                    <div class="category-meta">
+                        <span><i class="fas fa-book"></i> 120 Courses</span>
+                        <span><i class="fas fa-users"></i> 15,000+ Students</span>
+                    </div>
+                    <a href="index.html" class="btn btn-primary">Explore Courses</a>
+                </div>
+
+                <!-- Category Card 2 -->
+                <div class="category-card" data-category="design">
+                    <div class="category-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Design</h3>
+                    <p>Master UI/UX design, graphic design, and visual communication principles.</p>
+                    <div class="category-meta">
+                        <span><i class="fas fa-book"></i> 85 Courses</span>
+                        <span><i class="fas fa-users"></i> 12,500+ Students</span>
+                    </div>
+                    <a href="index.html" class="btn btn-primary">Explore Courses</a>
+                </div>
+
+                <!-- Category Card 3 -->
+                <div class="category-card" data-category="business">
+                    <div class="category-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Business</h3>
+                    <p>Develop business skills in marketing, management, entrepreneurship and more.</p>
+                    <div class="category-meta">
+                        <span><i class="fas fa-book"></i> 95 Courses</span>
+                        <span><i class="fas fa-users"></i> 10,800+ Students</span>
+                    </div>
+                    <a href="index.html" class="btn btn-primary">Explore Courses</a>
+                </div>
+
+                <!-- Category Card 4 -->
+                <div class="category-card" data-category="lifestyle">
+                    <div class="category-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Photography</h3>
+                    <p>Learn photography techniques, editing, composition, and visual storytelling.</p>
+                    <div class="category-meta">
+                        <span><i class="fas fa-book"></i> 65 Courses</span>
+                        <span><i class="fas fa-users"></i> 8,200+ Students</span>
+                    </div>
+                    <a href="index.html" class="btn btn-primary">Explore Courses</a>
+                </div>
+
+                <!-- Category Card 5 -->
+                <div class="category-card" data-category="lifestyle">
+                    <div class="category-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Music</h3>
+                    <p>Master musical instruments, music theory, production, and composition.</p>
+                    <div class="category-meta">
+                        <span><i class="fas fa-book"></i> 70 Courses</span>
+                        <span><i class="fas fa-users"></i> 9,500+ Students</span>
+                    </div>
+                    <a href="index.html" class="btn btn-primary">Explore Courses</a>
+                </div>
+
+                <!-- Category Card 6 -->
+                <div class="category-card" data-category="development">
+                    <div class="category-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>Languages</h3>
+                    <p>Learn new languages with expert instructors and interactive lessons.</p>
+                    <div class="category-meta">
+                        <span><i class="fas fa-book"></i> 110 Courses</span>
+                        <span><i class="fas fa-users"></i> 14,300+ Students</span>
+                    </div>
+                    <a href="index.html" class="btn btn-primary">Explore Courses</a>
+                </div>
+
+                <!-- Category Card 7 -->
+                <div class="category-card" data-category="development">
+                    <div class="category-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Data Science</h3>
+                    <p>Learn data analysis, machine learning, AI, and statistical methods.</p>
+                    <div class="category-meta">
+                        <span><i class="fas fa-book"></i> 75 Courses</span>
+                        <span><i class="fas fa-users"></i> 11,200+ Students</span>
+                    </div>
+                    <a href="index.html" class="btn btn-primary">Explore Courses</a>
+                </div>
+
+                <!-- Category Card 8 -->
+                <div class="category-card" data-category="lifestyle">
+                    <div class="category-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Health & Fitness</h3>
+                    <p>Improve your health with courses on fitness, nutrition, and wellness.</p>
+                    <div class="category-meta">
+                        <span><i class="fas fa-book"></i> 60 Courses</span>
+                        <span><i class="fas fa-users"></i> 7,800+ Students</span>
+                    </div>
+                    <a href="index.html" class="btn btn-primary">Explore Courses</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Topics Section -->
+    <section class="topics-section">
+        <div class="container">
+            <h2 class="section-title">Popular Topics</h2>
+            <div class="topics-grid">
+                <a href="index.html" class="topic-tag">JavaScript</a>
+                <a href="index.html" class="topic-tag">React</a>
+                <a href="index.html" class="topic-tag">Python</a>
+                <a href="index.html" class="topic-tag">UI/UX Design</a>
+                <a href="index.html" class="topic-tag">Digital Marketing</a>
+                <a href="index.html" class="topic-tag">Photography</a>
+                <a href="index.html" class="topic-tag">Machine Learning</a>
+                <a href="index.html" class="topic-tag">Guitar</a>
+                <a href="index.html" class="topic-tag">Graphic Design</a>
+                <a href="index.html" class="topic-tag">Data Analysis</a>
+                <a href="index.html" class="topic-tag">Spanish</a>
+                <a href="index.html" class="topic-tag">Yoga</a>
+                <a href="index.html" class="topic-tag">Business Strategy</a>
+                <a href="index.html" class="topic-tag">Mobile Development</a>
+                <a href="index.html" class="topic-tag">Video Editing</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 class="section-title">Find Out About The Latest Courses With The</h2>
+                <h3 class="newsletter-title"><span class="highlight">Academy</span> Newsletter</h3>
+                <button class="btn btn-dark">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aenean accumsan bibendum gravida maecenas augue elementum et, sed. Diam, integer feugiat phasellus odio nisi, amet. Lacus facilisi netus faucibus eleifend sem mauris, consequat. Amet facilisis sit sit faucibus nulla. Semper nam tortor felis aliquam.</p>
+                </div>
+                <div class="footer-logo">
+                    <div class="logo">
+                        <span class="logo-icon">🟣</span>
+                        <h1>ACADEMY</h1>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-content">
+                <div class="footer-certificate">
+                    <h3>MEMBERSHIP CERTIFICATE</h3>
+                    <img src="/placeholder.svg?height=200&width=300" alt="Certificate of Education">
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>CATEGORIES</h3>
+                        <ul>
+                            <li><a href="index.html">Design</a></li>
+                            <li><a href="index.html">Development</a></li>
+                            <li><a href="index.html">Marketing</a></li>
+                            <li><a href="index.html">Business</a></li>
+                            <li><a href="index.html">Lifestyle</a></li>
+                            <li><a href="index.html">Photography</a></li>
+                            <li><a href="index.html">Music</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>QUICK ACCESS</h3>
+                        <ul>
+                            <li><a href="index.html">What We Offer</a></li>
+                            <li><a href="index.html">Careers</a></li>
+                            <li><a href="index.html">Leadership</a></li>
+                            <li><a href="index.html">About</a></li>
+                            <li><a href="index.html">Catalog</a></li>
+                            <li><a href="index.html">Degrees</a></li>
+                            <li><a href="index.html">For Enterprise</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>MORE COMMENT</h3>
+                        <ul>
+                            <li><a href="index.html">Affiliate</a></li>
+                            <li><a href="index.html">Sitemap</a></li>
+                            <li><a href="index.html">Privacy Policy</a></li>
+                            <li><a href="index.html">Terms</a></li>
+                            <li><a href="index.html">Accessibility</a></li>
+                            <li><a href="index.html">Press</a></li>
+                            <li><a href="index.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2023 Academy. All rights reserved.</p>
+                <p>Designed by Academy</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="nav-enhancement.js"></script>
+    <script src="category-nav.js"></script>
+    <script src="categories-page.js"></script>
+</body>
+</html>

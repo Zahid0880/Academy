@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Courses - Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="category-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-icon">🟣</span>
+                    <h1>ACADEMY</h1>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="teach.html">Teach</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search Courses">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="profile">
+                <div class="profile-img">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Profile">
+                </div>
+                <div class="profile-info">
+                    <p class="profile-name">Refael Pathan</p>
+                    <p class="profile-title">UI/UX Designer</p>
+                </div>
+                <div class="notification">
+                    <span class="notification-dot"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Category Navigation -->
+    <div class="category-nav container">
+        <div class="category-item" data-category="python">
+            <span class="category-icon">🎯</span>
+            <span>Python</span>
+        </div>
+        <div class="category-item active" data-category="react">
+            <span>React</span>
+        </div>
+        <div class="category-item" data-category="unity">
+            <span>Unity</span>
+        </div>
+        <div class="category-item" data-category="uiux">
+            <span class="category-icon special">UI & UX</span>
+        </div>
+        <div class="category-item" data-category="docker">
+            <span>Docker</span>
+        </div>
+        <div class="category-item" data-category="aftereffects">
+            <span>After Effects</span>
+        </div>
+        <div class="category-item" data-category="lightroom">
+            <span>Lightroom</span>
+        </div>
+        <div class="category-item" data-category="photography">
+            <span>Photography</span>
+        </div>
+        <div class="category-item">
+            <span class="more-icon"><i class="fas fa-chevron-right"></i></span>
+        </div>
+    </div>
+
+    <!-- Category Banner -->
+    <section class="category-banner">
+        <div class="container">
+            <div class="category-banner-content">
+                <h1><span class="category-icon"><i class="fab fa-react"></i></span> React</h1>
+                <p>Master React.js, the popular JavaScript library for building user interfaces. Learn component-based architecture, state management, and modern frontend development.</p>
+            </div>
+            <div class="category-stats">
+                <div class="stat">
+                    <span class="stat-number">180</span>
+                    <span class="stat-label">Courses</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">950K+</span>
+                    <span class="stat-label">Students</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">85</span>
+                    <span class="stat-label">Instructors</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Courses -->
+    <section class="featured-courses">
+        <div class="container">
+            <h2 class="section-title">Featured React Courses</h2>
+            <div class="courses-grid">
+                <!-- Course Card 1 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="./img/02.jpg" alt="React - The Complete Guide">
+                        <div class="course-level">All Levels</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">React - The Complete Guide</h3>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>52 Students</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Duration: 40h</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-signal"></i>
+                                <span>All Levels</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <button class="btn btn-sm btn-primary">Enroll Course</button>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 2 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="./img/04.jpg" alt="Modern React with Redux">
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Modern React with Redux</h3>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>45 Students</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Duration: 32h</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-signal"></i>
+                                <span>Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <button class="btn btn-sm btn-primary">Enroll Course</button>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 3 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="./img/06.jpg" alt="React Native - Build Mobile Apps">
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">React Native - Build Mobile Apps</h3>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>38 Students</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Duration: 28h</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-signal"></i>
+                                <span>Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <button class="btn btn-sm btn-primary">Enroll Course</button>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Paths -->
+    <section class="learning-paths">
+        <div class="container">
+            <h2 class="section-title">React Learning Paths</h2>
+            <div class="paths-grid">
+                <!-- Path Card 1 -->
+                <div class="path-card">
+                    <div class="path-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="path-content">
+                        <h3>Frontend Developer</h3>
+                        <p>Master React fundamentals and advanced concepts to become a professional frontend developer.</p>
+                        <div class="path-details">
+                            <span><i class="fas fa-book"></i> 4 Courses</span>
+                            <span><i class="fas fa-clock"></i> 70+ Hours</span>
+                        </div>
+                        <button class="btn btn-outline">View Path</button>
+                    </div>
+                </div>
+
+                <!-- Path Card 2 -->
+                <div class="path-card">
+                    <div class="path-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="path-content">
+                        <h3>Mobile App Developer</h3>
+                        <p>Learn to build cross-platform mobile applications using React Native for iOS and Android.</p>
+                        <div class="path-details">
+                            <span><i class="fas fa-book"></i> 3 Courses</span>
+                            <span><i class="fas fa-clock"></i> 50+ Hours</span>
+                        </div>
+                        <button class="btn btn-outline">View Path</button>
+                    </div>
+                </div>
+
+                <!-- Path Card 3 -->
+                <div class="path-card">
+                    <div class="path-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="path-content">
+                        <h3>Full Stack Developer</h3>
+                        <p>Master both frontend with React and backend technologies to become a full stack developer.</p>
+                        <div class="path-details">
+                            <span><i class="fas fa-book"></i> 6 Courses</span>
+                            <span><i class="fas fa-clock"></i> 100+ Hours</span>
+                        </div>
+                        <button class="btn btn-outline">View Path</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Topics -->
+    <section class="popular-topics">
+        <div class="container">
+            <h2 class="section-title">Popular React Topics</h2>
+            <div class="topics-grid">
+                <a href="#" class="topic-tag">React Basics</a>
+                <a href="#" class="topic-tag">Hooks</a>
+                <a href="#" class="topic-tag">Redux</a>
+                <a href="#" class="topic-tag">Context API</a>
+                <a href="#" class="topic-tag">React Router</a>
+                <a href="#" class="topic-tag">Next.js</a>
+                <a href="#" class="topic-tag">React Native</a>
+                <a href="#" class="topic-tag">GraphQL</a>
+                <a href="#" class="topic-tag">Testing</a>
+                <a href="#" class="topic-tag">Performance</a>
+                <a href="#" class="topic-tag">State Management</a>
+                <a href="#" class="topic-tag">Component Patterns</a>
+                <a href="#" class="topic-tag">Styled Components</a>
+                <a href="#" class="topic-tag">TypeScript</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Courses -->
+    <section class="all-courses">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">All React Courses</h2>
+                <div class="course-filters">
+                    <div class="filter-group">
+                        <label>Sort By:</label>
+                        <select id="sort-filter">
+                            <option value="popular">Most Popular</option>
+                            <option value="newest">Newest</option>
+                            <option value="highest">Highest Rated</option>
+                            <option value="lowest">Lowest Price</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Level:</label>
+                        <select id="level-filter">
+                            <option value="all">All Levels</option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="courses-grid">
+                <!-- Course Card 1 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="React Fundamentals">
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">React Fundamentals</h3>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>60 Students</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Duration: 20h</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-signal"></i>
+                                <span>Beginner</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <button class="btn btn-sm btn-primary">Enroll Course</button>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 2 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Advanced React Patterns">
+                        <div class="course-level">Advanced</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Advanced React Patterns</h3>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>32 Students</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Duration: 18h</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-signal"></i>
+                                <span>Advanced</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <button class="btn btn-sm btn-primary">Enroll Course</button>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 3 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="React with TypeScript">
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">React with TypeScript</h3>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>40 Students</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Duration: 22h</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-signal"></i>
+                                <span>Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <button class="btn btn-sm btn-primary">Enroll Course</button>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 4 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Building a React E-Commerce Site">
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Building a React E-Commerce Site</h3>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>36 Students</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Duration: 26h</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-signal"></i>
+                                <span>Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <button class="btn btn-sm btn-primary">Enroll Course</button>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 5 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="React Testing with Jest and Enzyme">
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">React Testing with Jest and Enzyme</h3>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>28 Students</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Duration: 16h</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-signal"></i>
+                                <span>Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <button class="btn btn-sm btn-primary">Enroll Course</button>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 6 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Next.js with React">
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Next.js with React</h3>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>45 Students</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Duration: 24h</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-signal"></i>
+                                <span>Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <button class="btn btn-sm btn-primary">Enroll Course</button>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <button class="pagination-btn prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="pagination-numbers">
+                    <span class="page-number active">1</span>
+                    <span class="page-number">2</span>
+                    <span class="page-number">3</span>
+                    <span class="page-number">4</span>
+                    <span class="page-number">5</span>
+                </div>
+                <button class="pagination-btn next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 class="section-title">Find Out About The Latest React Courses With The</h2>
+                <h3 class="newsletter-title"><span class="highlight">Academy</span> Newsletter</h3>
+                <button class="btn btn-dark">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aenean accumsan bibendum gravida maecenas augue elementum et, sed. Diam, integer feugiat phasellus odio nisi, amet. Lacus facilisi netus faucibus eleifend sem mauris, consequat. Amet facilisis sit sit faucibus nulla. Semper nam tortor felis aliquam.</p>
+                </div>
+                <div class="footer-logo">
+                    <div class="logo">
+                        <span class="logo-icon">🟣</span>
+                        <h1>ACADEMY</h1>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-content">
+                <div class="footer-certificate">
+                    <h3>MEMBERSHIP CERTIFICATE</h3>
+                    <img src="./img/012.jpg" alt="Certificate of Education">
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>CATEGORIES</h3>
+                        <ul>
+                            <li><a href="#">Design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Marketing</a></li>
+                            <li><a href="#">Business</a></li>
+                            <li><a href="#">Lifestyle</a></li>
+                            <li><a href="#">Photography</a></li>
+                            <li><a href="#">Music</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>QUICK ACCESS</h3>
+                        <ul>
+                            <li><a href="#">What We Offer</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Leadership</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Catalog</a></li>
+                            <li><a href="#">Degrees</a></li>
+                            <li><a href="#">For Enterprise</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>MORE COMMENT</h3>
+                        <ul>
+                            <li><a href="#">Affiliate</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Accessibility</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2023 Academy. All rights reserved.</p>
+                <p>Designed by Academy</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="category.js"></script>
+    <script src="nav-enhancement.js"></script>
+</body>
+</html>

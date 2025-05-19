@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academy - Online Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="category-nav-styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <span class="logo-icon">🟣</span>
+                <h1>ACADEMY</h1>
+            </div>
+            <nav class="main-nav">
+    <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="teach.html">Teach</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+    </ul>
+</nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search Courses">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="profile">
+                <div class="profile-img">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Profile">
+                </div>
+                <div class="profile-info">
+                    <p class="profile-name">Refael Pathan</p>
+                    <p class="profile-title">UI/UX Designer</p>
+                </div>
+                <div class="notification">
+                    <span class="notification-dot"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Category Navigation -->
+    <div class="category-nav container">
+        <div class="category-item active" data-category="python">
+            <a href="python.html">
+                <span class="category-icon">🎯</span>
+                <span>Python</span>
+            </a>
+        </div>
+        <div class="category-item" data-category="react">
+            <a href="react.html">
+                <span>React</span>
+            </a>
+        </div>
+        <div class="category-item" data-category="unity">
+            <a href="unity.html">
+                <span>Unity</span>
+            </a>
+        </div>
+        <div class="category-item" data-category="uiux">
+            <a href="uiux.html">
+                <span>UI & UX</span>
+            </a>
+        </div>
+        <div class="category-item" data-category="docker">
+            <a href="docker.html">
+                <span>Docker</span>
+            </a>
+        </div>
+        <div class="category-item" data-category="aftereffects">
+            <a href="aftereffects.html">
+                <span>After Effects</span>
+            </a>
+        </div>
+        <div class="category-item" data-category="lightroom">
+            <a href="lightroom.html">
+                <span>Lightroom</span>
+            </a>
+        </div>
+        <div class="category-item" data-category="photography">
+            <a href="photography.html">
+                <span>Photography</span>
+            </a>
+        </div>
+        <div class="category-item">
+            <span class="more-icon"><i class="fas fa-chevron-right"></i></span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="greeting">
+                    <span class="emoji">👋</span>
+                    <h2>Hello Friends</h2>
+                </div>
+                <h1 class="hero-title">I Am Sofia And We Want To Start A <span class="highlight">Web Design</span> Course Together.</h1>
+                <p class="hero-subtitle">Do You Like It Too <span class="emoji">😍</span> ?</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Join Course Now</button>
+                    <button class="btn btn-outline">FAQ</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="./img/01.jpg" alt="Person sitting on a purple bean bag with laptop">
+                <div class="ui-ux-badge">UI & UX</div>
+                <div class="floating-icon icon-1">💻</div>
+                <div class="floating-icon icon-2">🎨</div>
+                <div class="floating-icon icon-3">📱</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <h2 class="section-title text-center">Search Among <span class="highlight">28,340</span> Courses And Find Your Favorite Course</h2>
+            <div class="search-box">
+                <button class="search-btn">Search</button>
+                <div class="search-filters">
+                    <div class="filter">
+                        <span>All Categories</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="filter">
+                        <span>All Levels</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="filter">
+                        <span>All Price</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="filter">
+                        <span>All View Following Courses</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Courses Section -->
+    <section class="courses-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">NEW COURSES</h2>
+                <div class="section-filters">
+                    <span class="filter active">All Courses</span>
+                    <span class="filter">Design</span>
+                    <span class="filter">Development</span>
+                    <span class="filter">Photography</span>
+                    <span class="filter">Music</span>
+                    <span class="filter-icon"><i class="fas fa-sliders-h"></i></span>
+                </div>
+            </div>
+            
+            <div class="courses-grid">
+                <!-- Course Card 1 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="./img/02.jpg" alt="Learn Figma - UI/UX Design Essential Training">
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Learn Figma - UI/UX Design Essential Training</h3>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>24 Students</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Duration: 17h</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-signal"></i>
+                                <span>Beginner</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <button class="btn btn-sm btn-primary">Enroll Course</button>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 2 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="./img/03.jpg" alt="Python for Beginners - Learn Programming">
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Python for Beginners - Learn Programming</h3>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>42 Students</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Duration: 24h</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-signal"></i>
+                                <span>Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <button class="btn btn-sm btn-primary">Enroll Course</button>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 3 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="./img/04.jpg" alt="Acoustic Guitar And Electric Guitar Tutorial">
+                        <div class="course-level">All Levels</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Acoustic Guitar And Electric Guitar Tutorial</h3>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>18 Students</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Duration: 20h</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-signal"></i>
+                                <span>All Levels</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <button class="btn btn-sm btn-primary">Enroll Course</button>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 4 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="./img/05.jpg" alt="Mobile App Development With React & Vue">
+                        <div class="course-level">Advanced</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Mobile App Development With React & Vue</h3>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>36 Students</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Duration: 22h</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-signal"></i>
+                                <span>Advanced</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <button class="btn btn-sm btn-primary">Enroll Course</button>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Instructors Section -->
+    <section class="instructors-section">
+        <div class="container">
+            <div class="instructors-header">
+                <h2 class="section-title"><span class="highlight">Best</span> Instructors</h2>
+                <p class="section-subtitle">Top Instructors From Around The World</p>
+                <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aenean accumsan bibendum gravida maecenas augue.</p>
+                <button class="btn btn-outline btn-sm">All Instructors</button>
+            </div>
+            <div class="instructors-grid">
+                <!-- 6 instructor cards in a grid -->
+                <div class="instructor-card">
+                    <img src="./img/06.jpg" alt="Instructor">
+                    <h3>John Smith</h3>
+                    <p>JavaScript</p>
+                </div>
+                <div class="instructor-card">
+                    <img src="./img/07.jpg" alt="Instructor">
+                    <h3>Sarah Johnson</h3>
+                    <p>Photography</p>
+                </div>
+                <div class="instructor-card">
+                    <img src="./img/08.jpg" alt="Instructor">
+                    <h3>Mike Andrews</h3>
+                    <p>UI/UX Design</p>
+                </div>
+                <div class="instructor-card">
+                    <img src="./img/09.jpg" alt="Instructor">
+                    <h3>Emma Wilson</h3>
+                    <p>Photography</p>
+                </div>
+                <div class="instructor-card">
+                    <img src="./img/10.jpg" alt="Instructor">
+                    <h3>David Jackson</h3>
+                    <p>Development</p>
+                </div>
+                <div class="instructor-card">
+                    <img src="./img/11.jpg" alt="Instructor">
+                    <h3>Janet Miller</h3>
+                    <p>Marketing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Your Courses Section -->
+    <section class="your-courses-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">YOUR COURSES</h2>
+                <a href="#" class="see-all">See All</a>
+            </div>
+            <div class="your-courses-grid">
+                <!-- 4 course cards in a grid -->
+                <!-- Similar structure to the course cards above -->
+                <!-- For brevity, I'm not including all cards shown in the image -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 class="section-title">Find Out About The Latest Courses With The</h2>
+                <h3 class="newsletter-title"><span class="highlight">Academy</span> Newsletter</h3>
+                <button class="btn btn-dark">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Courses Section -->
+    <section class="top-courses-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">TOP COURSES</h2>
+                <div class="pagination-controls">
+                    <button class="pagination-btn prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="pagination-btn next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+            <div class="courses-grid">
+                <!-- Course cards will be dynamically loaded by JavaScript -->
+                <!-- Course Card 1 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="./img/01.jpg" alt="Advanced JavaScript: From Fundamentals to Functional JS">
+                        <div class="course-level">Advanced</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Advanced JavaScript: From Fundamentals to Functional JS</h3>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>78 Students</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Duration: 36h</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-signal"></i>
+                                <span>Advanced</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <button class="btn btn-sm btn-primary">Enroll Course</button>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 2 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="./img/02.jpg" alt="Complete Python Bootcamp: From Zero to Hero">
+                        <div class="course-level">All Levels</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Complete Python Bootcamp: From Zero to Hero</h3>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>95 Students</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Duration: 42h</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-signal"></i>
+                                <span>All Levels</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <button class="btn btn-sm btn-primary">Enroll Course</button>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 3 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="./img/03.jpg" alt="Machine Learning A-Z: Hands-On Python & R">
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Machine Learning A-Z: Hands-On Python & R</h3>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>65 Students</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Duration: 40h</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-signal"></i>
+                                <span>Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <button class="btn btn-sm btn-primary">Enroll Course</button>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 4 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="./img/04.jpg" alt="The Complete 2023 Web Development Bootcamp">
+                        <div class="course-level">All Levels</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">The Complete 2023 Web Development Bootcamp</h3>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>88 Students</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Duration: 55h</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-signal"></i>
+                                <span>All Levels</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <button class="btn btn-sm btn-primary">Enroll Course</button>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aenean accumsan bibendum gravida maecenas augue elementum et, sed. Diam, integer feugiat phasellus odio nisi, amet. Lacus facilisi netus faucibus eleifend sem mauris, consequat. Amet facilisis sit sit faucibus nulla. Semper nam tortor felis aliquam.</p>
+                </div>
+                <div class="footer-logo">
+                    <div class="logo">
+                        <span class="logo-icon">🟣</span>
+                        <h1>ACADEMY</h1>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-content">
+                <div class="footer-certificate">
+                    <h3>MEMBERSHIP CERTIFICATE</h3>
+                    <img src="./img/012.jpg" alt="Certificate of Education">
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>CATEGORIES</h3>
+                        <ul>
+                            <li><a href="#">Design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Marketing</a></li>
+                            <li><a href="#">Business</a></li>
+                            <li><a href="#">Lifestyle</a></li>
+                            <li><a href="#">Photography</a></li>
+                            <li><a href="#">Music</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>QUICK ACCESS</h3>
+                        <ul>
+                            <li><a href="#">What We Offer</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Leadership</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Catalog</a></li>
+                            <li><a href="#">Degrees</a></li>
+                            <li><a href="#">For Enterprise</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>MORE COMMENT</h3>
+                        <ul>
+                            <li><a href="#">Affiliate</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Accessibility</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2023 Academy. All rights reserved.</p>
+                <p>Designed by Academy</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="nav-enhancement.js"></script>
+    <script src="category-nav.js"></script>
+</body>
+</html>
